@@ -1,0 +1,16 @@
+C:\Users\OO102\source\repos\Activity 1\Activity 1\bin\Debug\net8.0-windows\Activity 1.exe
+C:\Users\OO102\source\repos\Activity 1\Activity 1\bin\Debug\net8.0-windows\Activity 1.deps.json
+C:\Users\OO102\source\repos\Activity 1\Activity 1\bin\Debug\net8.0-windows\Activity 1.runtimeconfig.json
+C:\Users\OO102\source\repos\Activity 1\Activity 1\bin\Debug\net8.0-windows\Activity 1.dll
+C:\Users\OO102\source\repos\Activity 1\Activity 1\bin\Debug\net8.0-windows\Activity 1.pdb
+C:\Users\OO102\source\repos\Activity 1\Activity 1\obj\Debug\net8.0-windows\Activity_1.Form1.resources
+C:\Users\OO102\source\repos\Activity 1\Activity 1\obj\Debug\net8.0-windows\Activity 1.csproj.GenerateResource.cache
+C:\Users\OO102\source\repos\Activity 1\Activity 1\obj\Debug\net8.0-windows\Activity 1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\OO102\source\repos\Activity 1\Activity 1\obj\Debug\net8.0-windows\Activity 1.AssemblyInfoInputs.cache
+C:\Users\OO102\source\repos\Activity 1\Activity 1\obj\Debug\net8.0-windows\Activity 1.AssemblyInfo.cs
+C:\Users\OO102\source\repos\Activity 1\Activity 1\obj\Debug\net8.0-windows\Activity 1.csproj.CoreCompileInputs.cache
+C:\Users\OO102\source\repos\Activity 1\Activity 1\obj\Debug\net8.0-windows\Activity 1.dll
+C:\Users\OO102\source\repos\Activity 1\Activity 1\obj\Debug\net8.0-windows\refint\Activity 1.dll
+C:\Users\OO102\source\repos\Activity 1\Activity 1\obj\Debug\net8.0-windows\Activity 1.pdb
+C:\Users\OO102\source\repos\Activity 1\Activity 1\obj\Debug\net8.0-windows\Activity 1.genruntimeconfig.cache
+C:\Users\OO102\source\repos\Activity 1\Activity 1\obj\Debug\net8.0-windows\ref\Activity 1.dll
