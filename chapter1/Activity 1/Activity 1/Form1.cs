@@ -1,91 +1,65 @@
-namespace FoodPickerApp
+namespace CartoonImageFormApp
 {
     public partial class Form1 : Form
     {
         public Form1()
         {
             InitializeComponent();
-            string[] foodGenre = { "Filipino", "Korean", "Chinese", "Italian" };
-            foodCuisine.Items.AddRange(foodGenre);
-
-            foodCuisine.DropDownStyle = ComboBoxStyle.DropDownList;
-            foodCuisine.SelectedIndex = 0;
-            checkedListBox1.CheckOnClick = true;
+            string[] selectanitem = { "peter", "lois", "meg", "stewie" };
+            comboBox1.Items.AddRange(selectanitem);
+            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBox1.SelectedIndex = 0;
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void selectBtn_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            string[] filipinoCuisineList = { "Pancit Canton", "Sisig", "Lumpia", "Sinigang", "Taho" };
-            string[] chineseCuisineList = { "Tofu", "Udon", "Dumpling", "Kung pao chicken" };
-            string[] koreanCuisineList = { "Kimchi", "Seaweed soup", "Japchae" };
-            string[] italianCuisineList = { "Pasta", "Pizza", "Ravioli", "Lasagna" };
+            string[] selectedItems = { "peter", "lois", "meg", "stewie" };
+            comboBox1.Items.Clear();
+            comboBox1.Items.AddRange(selectedItems);
 
-            checkedListBox1.Items.Clear();
-
-            if (foodCuisine.SelectedItem != null)
+            if (comboBox1.Items.Count > 0)
             {
-                string selectedCuisine = foodCuisine.SelectedItem.ToString();
-
-                if (selectedCuisine.Contains("Filipino"))
-                {
-                    checkedListBox1.Items.AddRange(filipinoCuisineList);
-                }
-                else if (selectedCuisine.Contains("Chinese"))
-                {
-                    checkedListBox1.Items.AddRange(chineseCuisineList);
-                }
-                else if (selectedCuisine.Contains("Korean"))
-                {
-                    checkedListBox1.Items.AddRange(koreanCuisineList);
-                }
-                else if (selectedCuisine.Contains("Italian"))
-                {
-                    checkedListBox1.Items.AddRange(italianCuisineList);
-                }
+                comboBox1.SelectedIndex = 0;
             }
-            else
-            {
-                MessageBox.Show("Select a Cuisine.");
-            }
-        }
-        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
 
         }
 
-        private void removeBtn_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-            if (listBox1.SelectedItem != null) 
-            {
-                listBox1.Items.Remove(listBox1.SelectedItem); 
-            }
-            else
-            {
-                MessageBox.Show("Please select an item to remove.");
-            }
+            pictureBox1.Image = null;
         }
 
-        private void addBtn_Click(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
+            string selectedItem = comboBox1.SelectedItem.ToString();
+            switch (selectedItem)
 
-            foreach (var item in checkedListBox1.CheckedItems)
             {
-                if (!listBox1.Items.Contains(item))
-                {
-                    listBox1.Items.Add(item);
-                }
+                case "peter":
+                    pictureBox1.Image = Image.FromFile("@C:\\Users\\PC\\Downloads\\family guy\\peter.jpg");
+                    break;
+                case "lois":
+                    pictureBox1.Image = Image.FromFile("@C:\\Users\\PC\\Downloads\\family guy\\lois.jpg");
+                    break;
+                case "meg":
+                    pictureBox1.Image = Image.FromFile("@C:\\Users\\PC\\Downloads\\family guy\\meg.jpg");
+                    break;
+                case "stewie":
+                    pictureBox1.Image = Image.FromFile("C:\\Users\\PC\\Downloads\\family guy\\stewie.jpg");
+                    break;
+
+                default:
+                    pictureBox1.Image = null;
+                    break;
             }
-        }
- 
-        private void clearBtn_Click(object sender, EventArgs e)
-        {
-            listBox1.Items.Clear();
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+
+            }
         }
     }
 
-}
